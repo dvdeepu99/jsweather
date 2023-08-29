@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    background: linear-gradient(10deg, #a7a5a5,#757474,#424242 );
+    background-attachment: fixed;
+    
+}
+
+.card{
+   width: 90%;
+   max-width: 470px;
+   background: linear-gradient(60deg, #f88764, #46dbf5, #00ffc3);
+   background-size: 600% 600%;
+   animation: animate 13s infinite linear;
+   color:#ffff;
+   margin:100px auto 100px;
+   border-radius: 20px;
+   padding:40px 35px; 
+   text-align: center;    
+  
+}
+@keyframes animate {
+	0% {
+		background-position: 0% 90%;
+	}
+    50%{
+        background-position: 100% 20%;
+    }
+	100% {
+		background-position: 0% 90%;
+	}
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ffff ;
+    color: #918e8e;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1 ;
+    margin-right:  16px;
+    font-size: 18px;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ffff ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor:pointer;
+}
+
+.search button img {
+    width: 29px;
+    
+}
+
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+
+}
+
+
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.extdetails{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px; 
+}
+
+.colh{
+    display: flex;
+    align-items:center;
+    text-align:left;
+}
+.cold{
+    display: flex;
+    align-items:center;
+    text-align:left;
+}
+.colf{
+    display: flex;
+    align-items:center;
+    text-align: center;
+}
+.colw{
+    display: flex;
+    align-items:center;
+    text-align:left;
+    
+}
+.colh img{
+    width:26px;
+    margin-right: 14px;
+}
+.cold img{
+    width:55px;
+    margin-right: 10px;
+}
+.colw img{
+    width:40px;
+    margin-right: 15px;
+}
+.colw p {
+    margin-right: -4px;
+}
+.colf img {
+    width:18px;
+    margin-right: 17px;
+    margin-left: 5px;
+}
+
+.humidity, .wind, .feels, .direct {
+    font-size: 25px;
+    margin-top: -6px;
+    text-align: center;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    margin: 10px;
+    text-align: left;
+    align-items: center;
+    display: none;
+}
+
+
